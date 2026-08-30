@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>522 चयनित प्रोग्रामर अभ्यर्थी</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, "Noto Sans Devanagari", sans-serif;
+        background: #f4f6f8;
+        color: #222;
+    }
+
+    .container {
+        max-width: 700px;
+        margin: 80px auto;
+        padding: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 40px 30px;
+        border-radius: 16px;
+        text-align: center;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+    }
+
+    h1 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        line-height: 1.7;
+    }
+
+    .send-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 16px 32px;
+        background: #2563eb;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .send-button:hover {
+        background: #1d4ed8;
+    }
+
+    .info {
+        margin-top: 30px;
+        padding: 18px;
+        background: #f8fafc;
+        border-radius: 10px;
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .note {
+        margin-top: 20px;
+        font-size: 13px;
+        color: #666;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>522 चयनित प्रोग्रामर अभ्यर्थी</h1>
+
+        <p>
+            निर्धारित ईमेल भेजने के लिए नीचे दिए गए बटन पर क्लिक करें।
+            आपका ईमेल ऐप आवश्यक जानकारी के साथ स्वतः खुल जाएगा।
+        </p>
+
+        <button class="send-button" onclick="sendEmail()">
+            📧 ईमेल भेजें
+        </button>
+
+        <div class="info">
+            <strong>To:</strong> 14 संबंधित प्राप्तकर्ता<br>
+            <strong>CC:</strong><br>
+            <strong>BCC:</strong> helpdeskbeltron@gmail.com
+        </div>
+
+        <div class="note">
+            ईमेल खुलने के बाद जानकारी की जाँच करें और केवल
+            <strong>Send</strong> बटन दबाएँ।
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function sendEmail() {
+
+    const to = [
+        "cm-secretariat-bih@gov.in",
+        "prsec_it@bihar.gov.in",
+        "mdbeltron@bihar.gov.in",
+        ].join(",");
+
+    const cc = [
+	 "splsec-it@bihar.gov.in",
+         "itpgro@bihar.gov.in",
+         "secy-par-bih@nic.in",
+         "cs-bihar@nic.in",
+	 "beltronmanpower@gmail.com",
+         "finsecy-bih@nic.in",
+         "health-bih@nic.in",
+         "seclab-bih@nic.in",
+         "rlrsec-bih@nic.in",
+         "secy_law@bihar.gov.in",
+         "secy-law-bih@nic.in",
+	 ].join(",");;
+
+    const bcc = "helpdeskbeltron@gmail.com";
+
+    const subject =
+        "522 चयनित प्रोग्रामर अभ्यर्थियों की नई नियुक्ति हेतु नीति निर्धारण की प्रक्रिया शीघ्र पूर्ण कराने एवं सूचना प्रौद्योगिकी विभाग को आवश्यक दिशा-निर्देश देने के संबंध में";
+
+    const body = `सेवा में,
+माननीय मंत्री महोदय,
+सूचना प्रौद्योगिकी विभाग,
+बिहार सरकार, पटना।
+विषय — 522 चयनित बेल्ट्रॉन प्रोग्रामरों की ज्वाइनिंग एक पक्ष में कराने के संबंध में।
+महोदय,
+सविनय निवेदन है कि हम सभी बेल्ट्रॉन के माध्यम से चयनित 522 प्रोग्रामर अभ्यर्थी हैं। दिनांक 29 जनवरी 2026 को 522 चयनित प्रोग्रामरों का परिणाम जारी हुआ तथा मार्च 2026 में दस्तावेज सत्यापन (DV) भी पूर्ण हो चुका है, लेकिन अभी तक हमारी ज्वाइनिंग नहीं हो सकी है।
+
+ज्वाइनिंग के संबंध में हम सभी अभ्यर्थी आपसे तीन बार मुलाकात कर अपनी समस्या से अवगत करा चुके हैं। इसके अतिरिक्त बेल्ट्रॉन कार्यालय में भी पांच बार जाकर ज्वाइनिंग के संबंध में जानकारी एवं समाधान का अनुरोध किया गया है। वहाँ से बताया जाता है कि नीति/नियमावली बनने तक सरकार के स्तर से ज्वाइनिंग पर रोक है।
+
+अतः आपसे विनम्र अनुरोध है कि 522 चयनित प्रोग्रामरों की ज्वाइनिंग एक पक्ष (15 दिनों) में सुनिश्चित कराने हेतु संबंधित अधिकारियों को आवश्यक दिशा-निर्देश प्रदान करने की कृपा करें।
+यदि निर्धारित अवधि में ज्वाइनिंग के संबंध में कोई ठोस एवं सकारात्मक निर्णय नहीं लिया जाता है, तो हम सभी चयनित प्रोग्रामर अपनी मांग को शांतिपूर्ण एवं लोकतांत्रिक तरीके से सरकार के समक्ष रखने हेतु दिनांक 01 सितंबर 2026 से गर्दनीबाग धरना स्थल, पटना में अनिश्चितकालीन धरना आयोजित करेंगे।
+
+हमारा उद्देश्य किसी प्रकार की अव्यवस्था उत्पन्न करना नहीं, बल्कि 522 चयनित अभ्यर्थियों की लंबित ज्वाइनिंग का शीघ्र समाधान प्राप्त करना है।
+अतः आपसे पुनः अनुरोध है कि 522 चयनित प्रोग्रामरों की ज्वाइनिंग शीघ्र कराने हेतु आवश्यक पहल एवं दिशा-निर्देश प्रदान करने की कृपा करें।
+
+भवदीय
+समस्त 522 चयनित प्रोग्रामर अभ्यर्थी
+बेल्ट्रॉन, बिहार`;
+
+    const mailto =
+        "mailto:" + to +
+        "?cc=" + encodeURIComponent(cc) +
+        "&bcc=" + encodeURIComponent(bcc) +
+        "&subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
+    window.location.href = mailto;
+}
+
+</script>
+
+</body>
+</html>
