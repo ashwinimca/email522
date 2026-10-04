@@ -1,66 +1,189 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>522 BELTRON Programmers - Joining Reminder</title>
-<style>
-body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#f4f6f8;color:#222}
-.container{max-width:760px;margin:50px auto;padding:20px}.card{background:#fff;padding:32px;border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,.1)}
-h1{font-size:24px;line-height:1.4;margin:0 0 12px;text-align:center}.subtitle{text-align:center;color:#555;margin-bottom:24px}
-.highlight{background:#fff3cd;border-left:5px solid #f59e0b;padding:14px 16px;margin:18px 0;border-radius:8px;line-height:1.7}
-.danger{background:#fee2e2;border-left-color:#dc2626}.info{background:#f8fafc;padding:16px;border-radius:10px;line-height:1.8;margin-top:20px}
-.send-button{display:block;width:100%;margin-top:24px;padding:16px;background:#2563eb;color:#fff;border:0;border-radius:10px;font-size:18px;font-weight:bold;cursor:pointer}
-.send-button:hover{background:#1d4ed8}.note{margin-top:16px;text-align:center;font-size:13px;color:#666}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Media Invitation | 522 BELTRON Programmers</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, "Noto Sans Devanagari", sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.10);
+        }
+
+        h1 {
+            color: #b91c1c;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 8px;
+            background: #d93025;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #b71c1c;
+        }
+
+        .note {
+            margin-top: 18px;
+            font-size: 13px;
+            color: #777;
+        }
+    </style>
 </head>
+
 <body>
-<div class="container"><div class="card">
-<h1>522 चयनित BELTRON प्रोग्रामर</h1>
-<div class="subtitle">Joining प्रारंभ कराने एवं स्पष्ट समय-सीमा निर्धारित करने हेतु ईमेल</div>
-<div class="highlight"><strong>मुख्य मांग:</strong> 522 चयनित BELTRON प्रोग्रामरों की लंबित Joining शीघ्र प्रारंभ कराई जाए।</div>
-<div class="info"><strong>To:</strong> 3 संबंधित प्राप्तकर्ता<br><strong>CC:</strong> 11 संबंधित प्राप्तकर्ता<br><strong>BCC:</strong> helpdeskbeltron@gmail.com</div>
-<button class="send-button" onclick="sendEmail()">📧 ईमेल तैयार करें</button>
-<div class="note">ईमेल ऐप खुलेगा और To, CC, BCC, Subject तथा पूरा आवेदन स्वतः भर जाएगा।<br>भेजने से पहले जानकारी की जाँच करें।</div>
-</div></div>
+
+<div class="container">
+
+    <h1>📢 MEDIA INVITATION</h1>
+
+    <p>
+        522 चयनित BELTRON Programmers की लंबित Joining को लेकर
+        पुनः अनिश्चितकालीन आंदोलन
+    </p>
+
+    <button onclick="sendEmail()">
+        📧 Send Email
+    </button>
+
+    <div class="note">
+        सभी Media Contacts BCC में automatically add होंगे।
+    </div>
+
+</div>
+
+
 <script>
-function sendEmail(){
-const to=["cm-secretariat-bih@gov.in","prsec_it@bihar.gov.in","mdbeltron@bihar.gov.in"].join(",");
-const cc=["splsec-it@bihar.gov.in","itpgro@bihar.gov.in","secy-par-bih@nic.in","cs-bihar@nic.in","beltronmanpower@gmail.com","finsecy-bih@nic.in","health-bih@nic.in","seclab-bih@nic.in","rlrsec-bih@nic.in","secy_law@bihar.gov.in","secy-law-bih@nic.in"].join(",");
-const bcc="helpdeskbeltron@gmail.com";
-const subject="522 चयनित BELTRON प्रोग्रामरों की लंबित Joining पर कार्रवाई हेतु पुनः अनुरोध";
-const body=`सेवा में,
-माननीय मंत्री महोदय,
-सूचना प्रौद्योगिकी विभाग,
-बिहार सरकार, पटना।
 
-विषय: 522 चयनित BELTRON प्रोग्रामरों की लंबित Joining पर शीघ्र निर्णय एवं कार्रवाई हेतु पुनः अनुरोध
+const subject =
+"MEDIA INVITATION | 522 चयनित BELTRON Programmers की लंबित Joining को लेकर पुनः अनिश्चितकालीन आंदोलन";
 
-महोदय,
 
-BELTRON प्रोग्रामर पद की भर्ती प्रक्रिया की अधिसूचना वर्ष 2024 में जारी की गई थी। निर्धारित चयन प्रक्रिया पूरी होने के बाद 29 जनवरी 2026 को परिणाम जारी किया गया तथा मार्च 2026 में Document Verification की  प्रक्रिया भी पूर्ण हो चुकी है। इसके बावजूद 522 चयनित अभ्यर्थियों की Joining आज तक लंबित है।
+const body = `माननीय News Channel टीम,
 
-भर्ती प्रक्रिया पूरी होने और चयनित होने के बावजूद लंबे समय से Joining लंबित रहने के कारण 522 चयनित अभ्यर्थी लगातार अनिश्चितता की स्थिति में हैं। इस संबंध में हम अभ्यर्थी लगातार विभागीय स्तर पर अपनी बात रखते आए हैं।
+MEDIA INVITATION | PRESS NOTE
 
-5 सितंबर के प्रतिनिधिमंडल से पहले भी हम माननीय मंत्री महोदय से 5 बार मिल चुके हैं। 5 सितंबर को हुई मुलाकात के बाद 11 सितंबर को पुनः मुलाकात हुई, जिसमें लगभग 10 दिनों में स्थिति स्पष्ट होने की बात कही गई थी।
+522 चयनित BELTRON Programmers की लंबित Joining को लेकर पुनः अनिश्चितकालीन आंदोलन
 
-महोदय, उक्त मुलाकात के बाद 15 दिनों से अधिक समय बीत जाने के बावजूद Joining से संबंधित किसी भी प्रकार का ठोस आदेश, आधिकारिक सूचना, पत्र अथवा अन्य कोई प्रमाण अभ्यर्थियों के समक्ष उपलब्ध नहीं कराया गया है। आज भी 522 चयनित अभ्यर्थी अपनी Joining को लेकर अनिश्चितता की स्थिति में हैं और किसी ठोस आधिकारिक जानकारी की प्रतीक्षा कर रहे हैं।
+माननीय पत्रकार बंधुओं,
 
-महोदय, अब हम किसी अतिरिक्त प्रक्रिया या केवल मौखिक आश्वासन की प्रतीक्षा नहीं करना चाहते। हमारी स्पष्ट एवं मुख्य मांग 522 चयनित प्रोग्रामरों की Joining है। इसलिए संबंधित विभाग एवं BELTRON को आवश्यक दिशा-निर्देश देकर लंबित प्रक्रिया को शीघ्र पूरा कराने तथा Joining के संबंध में स्पष्ट एवं आधिकारिक समय-सीमा निर्धारित करने की कृपा करें।
+बिहार के 522 चयनित BELTRON Programmers की Joining लंबे समय से लंबित है। भर्ती प्रक्रिया के प्रमुख चरण—परीक्षा, Result एवं Document Verification—पूरे होने के बावजूद अब तक चयनित अभ्यर्थियों को Joining नहीं दी गई है।
 
-यदि 1 अक्टूबर 2026 से पहले तक हमारी Joining प्रक्रिया प्रारंभ नहीं होती है, तो हम 522 चयनित अभ्यर्थी 1 अक्टूबर 2026 से शांतिपूर्ण एवं लोकतांत्रिक धरना तथा भूख हड़ताल प्रारंभ करने के लिए बाध्य होंगे। हमारा उद्देश्य किसी प्रकार का दबाव या व्यवधान उत्पन्न करना नहीं, बल्कि लंबे समय से लंबित अपनी Joining की मांग को शांतिपूर्ण एवं संवैधानिक तरीके से सरकार एवं विभाग के समक्ष रखना है।
+प्रमुख घटनाक्रम:
 
-हम आशा करते हैं कि हमारी स्थिति की गंभीरता को देखते हुए विभाग द्वारा शीघ्र ठोस कार्रवाई की जाएगी तथा 522 चयनित BELTRON प्रोग्रामरों की Joining प्रारंभ की जाएगी।
+🔹 2024 — Programmer भर्ती का Notification जारी
+🔹 05–06 अगस्त 2025 — भर्ती परीक्षा आयोजित
+🔹 जनवरी 2026 — Result प्रकाशित
+🔹 मार्च 2026 — Document Verification पूरा
+🔹 01 सितंबर 2026 - Joining की मांग को लेकर भूख हड़ताल एवं शांतिपूर्ण धरना शुरू
+🔹 05 सितंबर 2026 - IT Minister से मुलाकात; 02 अक्टूबर तक Joining शुरू होने का आश्वासन
+🔹 11 सितंबर 2026 - पुनः मुलाकात; 10 दिनों में Joining शुरू होने का आश्वासन
+🔹 29 सितंबर 2026 - पुनः मुलाकात, लेकिन Joining की निश्चित समयसीमा नहीं बताई गई
+🔹 01 अक्टूबर 2026 - गर्दनीबाग, पटना में अनिश्चितकालीन शांतिपूर्ण धरना एवं भूख हड़ताल पुनः शुरू
 
-अतः आपसे विनम्र अनुरोध है कि 522 चयनित BELTRON प्रोग्रामरों की Joining शीघ्र प्रारंभ कराने हेतु संबंधित विभाग एवं BELTRON को आवश्यक निर्देश प्रदान करने की कृपा करें।
+वर्तमान में अंबुज जी एवं मिथलेश जी भूख हड़ताल पर बैठे हैं।
 
-सादर,
+मीडिया से विनम्र अनुरोध है कि कृपया धरना स्थल पर पहुंचकर 522 चयनित अभ्यर्थियों की लंबित Joining एवं पूरे घटनाक्रम को कवरेज दें और उनकी बात सरकार एवं संबंधित विभाग तक पहुंचाने में सहयोग करें।
 
-समस्त 522 चयनित BELTRON प्रोग्रामर अभ्यर्थी
-बिहार`;
-const mailto="mailto:"+to+"?cc="+encodeURIComponent(cc)+"&bcc="+encodeURIComponent(bcc)+"&subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
-window.location.href=mailto;
+हमारी मुख्य मांग:
+
+522 चयनित BELTRON Programmers को शीघ्र Joining दी जाए एवं लंबित Joining प्रक्रिया तत्काल शुरू की जाए।
+
+522 चयनित BELTRON Programmers के प्रतिनिधि
+
+स्थान: गर्दनीबाग धरना स्थल, पटना
+आंदोलन: 01 अक्टूबर 2026 से
+Media Bite: 522 चयनित BELTRON Programmers के प्रतिनिधियों द्वारा`;
+
+
+/* MEDIA EMAIL LIST */
+
+const mediaEmails = [
+
+    "mailmudda.np@gmail.com",
+    "editor@intoday.com",
+    "editor@news18.com",
+    "abp@adfactors.com",
+    "feedback@auw.co.in",
+    "editor@jagrannewmedia.com",
+    "admin@news4nation.com",
+    "lakshman.roy@network18online.com",
+    "brijeshpandey27@gmail.com",
+    "abhishevk2002@yahoo.com",
+    "ravindrak2000@gmail.com",
+    "info@tv9.com",
+    "sanjay.tiwari@navbharatmedia.com",
+    "contact@dhruvrathee.com",
+    "mail@lallantop.com",
+    "editorial@newsclick.in",
+    "editor@inanews.co.in",
+    "contact@indenews.in",
+    "editorhindi@dnpnewsnetwork.com",
+    "editor@thenews21.com",
+    "toieditorial@timesofindia.com",
+    "letters@hindustantimes.com",
+    "letters@thehindu.co.in",
+    "editor@expressindia.com",
+    "feedback@ndtv.com",
+    "letters.editor@intoday.com",
+    "editor@aajtak.com",
+    "info@news18.com",
+    "feedback@abpnetwork.com",
+    "zeenews@zee.com",
+    "contact@republicworld.com",
+    "ttedit@abp.in",
+    "dbcorp@dbcorp.in",
+    "support@amarujala.com",
+    "editor@jagran.com",
+    "helpdeskbeltron@gmail.com",
+    "feedback@livehindustan.com"
+
+];
+
+
+function sendEmail() {
+
+    const bcc = mediaEmails.join(",");
+
+    const mailto =
+        "mailto:" +
+        "?bcc=" + encodeURIComponent(bcc) +
+        "&subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
+    window.location.href = mailto;
 }
+
 </script>
+
 </body>
 </html>
